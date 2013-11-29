@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+        <meta charset="utf-8" />
+        <title>iWatch</title>
+        
+        <link href="css/screen.css" rel="stylesheet" media="screen" type="text/css" />
+                
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
+</head>
+
+<body>
+        <!-- Banner -->
+        <Banner><img src="img/banner.png"/></Banner>
+
+        <!-- Navigation -->
+        <nav>
+                <ul>
+                        <ol><a href="index.html">Home</a></ol>
+                        <ol><a href="news.html">News</a></ol>
+                        <ol><a href="top.html">Top</a></ol>
+                        <ol><a href="myaccount.html">MyAccount</a></ol>
+                </ul>
+        </nav>
+
+        <form action="search.html" method="post" autocomplete="on">
+                <input type="text" name="mainSearch" />
+                <input type="submit" value="suchen" />
+        </form>
+
+        <!-- Main Body -->
+        <article class="Main">
+
+                <article class="accountDetails" id="private">
+                    <h1>Your private Data</h1>
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Name" id="name" required autofocus />
+                        <input type="text" placeholder="Firstname" id="firstName" />
+                        <input type="email" placeholder="eMail" id="email" required />
+                        <input type="tel" placeholder="number" id="number" required />
+                        <input type="text" id="newsletter">
+                    </form>
+                </article>
+
+                <article class="accountDetails" id="payment">
+                    <h1>Payment Info</h1>
+                    <form action="#" method="post">
+                        <input type="radio" id="cardsVisa" />
+                        <input type="radio" id="cardsPost" />
+                        <input type="text" placeholder="Card No" id="cardNo" />
+                        <input type="text" placeholder="Safe No" id="safeNo" />
+                    </form>
+                </article>
+
+                <button id="saveChanges" onclick="saveChanges()">Save</button>
+                <a href="index.html">cancel</a>
+
+        </article>
+
+        <!-- Footer -->
+        <article class="footer">
+        </article>
+
+</body>
+</html>
